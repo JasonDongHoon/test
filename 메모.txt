@@ -1,0 +1,17 @@
+-int[] scores;  ooooooo
+scores = new int[] {100,90,80};
+
+-int[] scores2; xxxxxxx
+scores2 = {80,70,60};
+
+-int[] scores = {100,90,80}; ooooooo
+
+-int[][] scores = new int[5][3]; oooooo
+-int[][] scores = int[5][3]; xxxxxx
+
+-int[][] scores = new int[5][3];
+                 여기서의 5, 3값은 변수값의 총 개수를 뜻한다.
+
+
+줄=열, 칸=행
+3-44
