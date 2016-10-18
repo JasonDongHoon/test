@@ -1,3 +1,5 @@
+package step01;
+
 class Exam003 {}
 
 class A {}

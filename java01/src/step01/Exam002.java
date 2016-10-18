@@ -1,1 +1,3 @@
-class Exam002 {}
+package step01;
+
+public class Exam002 {}
