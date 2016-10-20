@@ -1,24 +1,26 @@
 package realtest;
-class Test02 {
+
+/*문제
+1) 숫자를 입력받아서 홀수 개수와 짝수 개수를 센다.
+   예) java Test02 1 5 6 6 8 7 4
+출력 예:
+짝수: 4
+홀수: 3
+*/
+public class Test02 {
   public static void main(String[] args) {
-    String name = "홍길동";
-    int age = 28;
-    double height = 178.5;
-    double weight = 85.2;
-    String email = "hong@test.com";
-    boolean isWorking = true;
-    char englishLevel = 'B';
-    String intro = "안녕하세요.\n개발자를 꿈꾸는 홍길동 입니다.\n다같이 열심히 해요";
+    int num = 0;
+    int eventCount = 0, oddCount = 0;
 
-    System.out.printf("이름: %s\n", name);
-    System.out.printf("나이: %d\n", age);
-    System.out.printf("키: %.1f\n", height);
-    System.out.printf("몸무게: %.1f\n", weight);
-    System.out.printf("이메일: %s\n", email);
-    System.out.printf("직장인 여부: %b\n", isWorking);
-    System.out.printf("영어 수준: %c\n", englishLevel);
-    System.out.printf("자기 소개:");
-    System.out.printf(intro);
+    for (int i = 0; i < args.length; i++) {
+      num = Integer.parseInt(args[i]);
+      if (num % 2 == 0)
+        eventCount++;
+      else
+        oddCount++;
+    }
 
+    System.out.printf("짝수: %d\n", eventCount);
+    System.out.printf("홀수: %d\n", oddCount);
   }
 }

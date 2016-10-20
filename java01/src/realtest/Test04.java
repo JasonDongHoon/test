@@ -1,17 +1,29 @@
 package realtest;
-class Test04 {
+
+/*문제
+1) 숫자를 입력 받아서 그 중 가장 큰 수와 가장 작은 수를 찾아라!
+   예) java Test02 278 34 12 1980 22 6
+출력 예:
+가장 큰 수: 1980
+가장 작은 수: 6
+
+힌트: /, % 연산자를 활용하라!
+*/
+public class Test04 {
   public static void main(String[] args) {
-    String name = "홍길동";
-    int[] scores = {100, 90, 80, 70, 80, 90, 100};
+    int num = Integer.parseInt(args[0]);
+    int maxNum = num,
+        minNum = num;
 
-    System.out.println("이름: " + name);
-    System.out.println("국어: " + scores[0]);
-    System.out.println("영어: " + scores[1]);
-    System.out.println("수학: " + scores[2]);
-    System.out.println("과학: " + scores[3]);
-    System.out.println("사회: " + scores[4]);
-    System.out.println("음악: " + scores[5]);
-    System.out.println("미술: " + scores[6]);
+    for (int i = 1; i < args.length; i++) {
+      num = Integer.parseInt(args[i]);
+      if (num > maxNum)
+        maxNum = num;
+      if (num < minNum)
+        minNum = num;
+    }
 
+    System.out.printf("가장 큰 수: %d\n", maxNum);
+    System.out.printf("가장 작은 수: %d\n", minNum);
   }
 }

@@ -1,22 +1,28 @@
 package realtest;
-class Test03 {
-  public static void main(String[] args) {
-    String name = "홍길동";
-    int kor = 100,
-        eng = 90,
-        math = 80,
-        sci = 70,
-        soc = 80,
-        mus = 90,
-        art = 100;
 
-      System.out.println("이름: " + name);
-      System.out.println("국어: " + kor);
-      System.out.println("영어: " + eng);
-      System.out.println("수학: " + math);
-      System.out.println("과학: " + sci);
-      System.out.println("사회: " + soc);
-      System.out.println("음악: " + mus);
-      System.out.println("미술: " + art);
+/*문제
+1) 숫자(약 -21억 ~ +21억)를 입력받아서 그 숫자에 포함된 홀수와 짝수를 센다.
+   예) java Test02 1566874
+출력 예:
+짝수: 4
+홀수: 3
+
+힌트: /, % 연산자를 활용하라!
+*/
+public class Test03 {
+  public static void main(String[] args) {
+    int num = Integer.parseInt(args[0]);
+    int eventCount = 0, oddCount = 0;
+
+    while (num > 0) {
+      if (num % 2 == 0)
+        eventCount++;
+      else
+        oddCount++;
+      num /= 10;
+    }
+
+    System.out.printf("짝수: %d\n", eventCount);
+    System.out.printf("홀수: %d\n", oddCount);
   }
 }
