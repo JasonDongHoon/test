@@ -1,6 +1,6 @@
 package test; // call by reference
 
-// 2016³â 10¿ù 21ÀÏ ±İ¿äÀÏ
+// 2016ë…„ 10ì›” 21ì¼ ê¸ˆìš”ì¼
 public class Exam069 {
 
 	static void swap(int a, int b) {

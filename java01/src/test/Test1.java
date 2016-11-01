@@ -6,16 +6,18 @@ public class Test1 {
 			int age = Integer.parseInt(args[0]);
 			
 			if (age < 8) {
-				System.out.println("À¯¾Æ"); 
-				}	else if (age 8 >= && age < 14) { 
-				 System.out.println("¾î¸°ÀÌ"); 	 
-			} else if (age 14 >= && age < 19) {
-						System.out.println("Ã»¼Ò³â");
-			}	else if (age 19 >= && age < 40) {
-							System.out.println("Áß³â"); 
-							}	else if (age 40 >= && age < 65) { 
-							} else { 
-								(System.out.println("³ëÀÎ");
-							}
+				System.out.println("ìœ ì•„");
+			} else if (age >= 8 && age < 14) {
+				System.out.println("ì–´ë¦°ì´");
+			} else if (age >= 14 && age <19) {
+				System.out.println("ì²­ì†Œë…„");
+			} else if (age >= 19 && age <40) {
+				System.out.println("ì²­ë…„");
+			} else if (age >= 40 && age <60) {
+				System.out.println("ì¤‘ë…„");
+			} else {
+				System.out.println("ë…¸ì¸");
+			}
+			
 	}
 }

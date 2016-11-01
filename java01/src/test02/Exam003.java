@@ -1,28 +1,29 @@
-package test02; // ÀÎ½ºÅÏ½º¿Í ·¹ÆÛ·±½º - new String(ÁÖ¼Ò)
+package test02; // 
 
-// 2016³â 10¿ù 21ÀÏ ±Ý¿äÀÏ
+// 2016ë…„ 10ì›” 24ì¼ ì›”ìš”ì¼
 public class Exam003 {
 	public static void main(String[] args) {
 
-		String s1 = "È«±æµ¿";
-		String s2 = "È«±æµ¿";
-		String s3 = "È«±æµ¿";
-		
+		String s1 = new String("í™ê¸¸ë™"); //ì£¼ì†Œê°’ì„ ê°€ì§€ê²Œ ë˜ë¯€ë¡œ s1,s2,s3ì€ ì„œë¡œ ë‹¤ë¥¸ ê°’ì´ë‹¤.
+		String s2 = new String("í™ê¸¸ë™");
+		String s3 = new String("í™ê¸¸ë™");
+
 		if (s1 == s2) {
 			System.out.println("s1 == s2");
 		}
-		
-		if (s1 == s3) {new String("È«±æµ¿");
+
+		if (s1 == s3) {
+			new String("í™ê¸¸ë™");
 			System.out.println("s1 == s3");
+		}
+		if (s2 == s3) {
+			System.out.println("s2 == s3");
 		}
 	}
 }
 
-
-
 /*
- * ¹®ÀÚ 3°³¸¦ ÀúÀåÇÒ char ¹è¿­À» ¸¸µé°í ±× ¹è¿­¿¡ ¹®ÀÚ ÄÚµå¸¦ ÀúÀåÇÑ´Ù.
- * ¶ÇÇÑ length ¸Þ¸ð¸®¿¡ ¹®ÀÚ °³¼ö¸¦ ÀúÀåÇÑ´Ù.
- * ±×¸®°í ÀÌ ¸Þ¸ð¸®ÀÇ ÁÖ¼Ò¸¦ ¸®ÅÏÇÑ´Ù. s1¿¡ ¹®ÀÚ¿­ÀÌ ÀúÀåµÈ ¸Þ¸ð¸®ÀÇ ÁÖ¼Ò°¡ µé¾îÀÖ´Ù.
- * ÁÖ¼Ò¸¦ ¾Ë°í ½Í¾î¿ä? ´ä : ÀÚ¹Ù´Â ¾Ë·ÁÁÖÁö ¾Ê´Â´Ù.
+ * ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ char ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Úµå¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½. ï¿½ï¿½ï¿½ï¿½ length ï¿½Þ¸ð¸®¿ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½. ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Þ¸ï¿½ï¿½ï¿½ ï¿½Ö¼Ò¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½. s1ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ï¿½ï¿½
+ * ï¿½Ö¼Ò°ï¿½ ï¿½ï¿½ï¿½ï¿½Ö´ï¿½. ï¿½Ö¼Ò¸ï¿½ ï¿½Ë°ï¿½ ï¿½Í¾ï¿½ï¿½? ï¿½ï¿½ : ï¿½Ú¹Ù´ï¿½ ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½.
  */

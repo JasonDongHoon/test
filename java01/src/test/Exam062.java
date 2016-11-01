@@ -2,7 +2,7 @@ package test; // ★★★ 메서드 정의와 호출
 
 // 2016년 10월 21일 금요일
 public class Exam062 {
-//1) 리턴값(x), 파라미터(x)
+//1) 리턴값(x), 파라미터(o)
 static void greeting() {
 	System.out.println("Hello, World!!");
 }
